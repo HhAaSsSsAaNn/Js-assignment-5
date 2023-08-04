@@ -1,0 +1,73 @@
+body{
+    background-color: bisque;
+    font-family: cursive;
+}
+.fs-9{
+    font-size: 0.7rem;
+}
+
+.nav-item .nav-link{
+    padding: 5px 25px !important;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    transition: 0.7s;
+    margin-right: 5px;
+}
+.nav-item .active{
+    border: 3px solid #009ad8;
+    color: #009ad8 !important;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.nav-item .nav-link:hover{
+    border: 3px solid #009ad8;
+    color: #009ad8 !important;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.find-location, .subscribe-form{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.find-location #search, .subscribe-form #email {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+
+.find-location #submit{
+    right: 55px;
+}
+.subscribe-form #send{
+    right: 5px;
+}
+
+.find-location #submit, .subscribe-form #send {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+#body{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+}
+
+.temp-font{
+    font-size: 90px;
+}
+
+.temp-font-sec{
+    font-size: 60px;
+}
+
+
+.p-ch{
+    padding-top: 2rem;
+}

@@ -32,9 +32,13 @@ let month = "";
 let windDir = "";
 let city = "";
 
-let http = []
+let http = [];
 
-getData();
+
+(async function(){
+    await getlocation();
+    await getData();
+})();
 
 async function getlocation(){
     return new Promise( function(resolved){
@@ -63,7 +67,8 @@ async function search(){
      http = await (await fetch(`https://api.weatherapi.com/v1/search.json?key=737d5374363f44bfa6d132414230208&q=${Mycity}`)).json();
      if (http.length > 0) {
         city = http[0].name;
-        getData();
+        console.log(city)
+        await getData();
      }
 }
 
@@ -76,7 +81,6 @@ async function getWeather(){
 
 
 async function getData(){
-    await getlocation();
    
     await getWeather();
     let days = response.forecast.forecastday;
